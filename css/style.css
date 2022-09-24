@@ -167,7 +167,7 @@ body {
 .header .text img {
     position: absolute;
     top: 320px;
-    right: -150px;
+    right: -145px;
     font-size: 20px;
 }
 
@@ -192,9 +192,10 @@ body {
 
 /* end profile */
 /* start edu */
-.education .text-edu{
+.education .text-edu {
     height: 350px;
 }
+
 .education .text-edu h2 {
     font-size: 45px;
 }
@@ -203,9 +204,11 @@ body {
     font-size: 15px;
     width: 200px;
 }
-.education .text-info p{
+
+.education .text-info p {
     font-size: 15px;
 }
+
 .education .text-edu,
 .text-one,
 .text-two,
@@ -221,7 +224,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% ,30%);
+    transform: translate(-50%, 30%);
     width: 220px;
     height: 220px;
     border-radius: 50%;
@@ -233,39 +236,45 @@ body {
     width: 150px;
     text-align: center;
 }
+
 @media(max-width:576px) {
     .education .circle {
         position: relative;
         margin-bottom: 145px;
     }
+
     .education .circle .text {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50% ,-10%);
+        transform: translate(-50%, -10%);
         width: 180px;
         height: 180px;
         border-radius: 50%;
         background-color: var(--main-color);
     }
-    
+
     .education .circle .text p {
         font-size: 35px;
         width: 150px;
         text-align: center;
     }
 }
+
 @media(min-width:992px) {
-    .education .text-edu{
+    .education .text-edu {
         height: 370px;
     }
+
     .education .text-edu ul li {
         font-size: 20px;
         width: 250px;
     }
-    .education .text-info p{
+
+    .education .text-info p {
         font-size: inherit;
     }
+
     .education .circle .text {
         position: absolute;
         top: 50%;
@@ -293,6 +302,7 @@ body {
 .portfilo .box {
     background-color: #042a3d;
     height: 400px;
+    margin-bottom: 100px;
 }
 
 .portfilo .box img {
@@ -316,6 +326,10 @@ body {
 
 .portfilo .one img {
     filter: grayscale(0);
+}
+
+.portfilo .one {
+    margin-bottom: 0;
 }
 
 @media(min-width:992px) {
