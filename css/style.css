@@ -1,0 +1,337 @@
+:root {
+    --main-color: #052230;
+    --two-color: #eff0f2;
+    --three-color: #f8ffff;
+}
+
+/* ms */
+@media(min-width:576px) {}
+
+/* md */
+@media(min-width:768px) {}
+
+/* lg */
+@media(min-width:992px) {}
+
+/* xl */
+@media(min-width:1200px) {}
+
+/* xxl */
+@media(min-width:1400px) {}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* start header */
+.header {
+    background-image: url("../images/photo_2022-09-24_15-24-45.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    background-color: var(--two-color);
+    transform: skewX(-25deg);
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    left: -110px;
+    z-index: -1;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    background-color: var(--two-color);
+    transform: skew(-35deg, 0deg);
+    width: 30%;
+    height: 210px;
+    top: 55%;
+    right: -230px;
+    z-index: 1;
+}
+
+@media(min-width:992px) {
+
+    .header::before {
+        content: "";
+        position: absolute;
+        background-color: var(--two-color);
+        transform: skewX(-25deg);
+        width: 30%;
+        height: 100%;
+        top: 0%;
+        left: -110px;
+        z-index: -1;
+    }
+
+    .header::after {
+        content: "";
+        position: absolute;
+        background-color: var(--two-color);
+        transform: skew(-40deg, 0deg);
+        width: 20%;
+        height: 45%;
+        top: 55%;
+        right: -300px;
+        z-index: 1;
+    }
+}
+
+.header .text {
+    position: relative;
+}
+
+.header .text h1 {
+    position: absolute;
+    top: 100px;
+    font-size: 54px;
+    width: 100px;
+}
+
+.header .text p {
+    position: absolute;
+    top: 250px;
+    font-size: 20px;
+
+}
+
+@media(max-width:576px) {
+    .header {
+        background-image: url("../images/photo_2022-09-24_15-24-45.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .header::before {
+        content: "";
+        position: absolute;
+        background-color: var(--two-color);
+        transform: skewX(-25deg);
+        width: 60%;
+        height: 100%;
+        top: 0%;
+        left: -100px;
+        z-index: -1;
+    }
+
+    .header::after {
+        content: "";
+        position: absolute;
+        background-color: var(--two-color);
+        transform: skew(-40deg, 0deg);
+        width: 30%;
+        height: 50%;
+        top: 50%;
+        right: -90px;
+        z-index: 1;
+    }
+
+    .header .text h1 {
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        font-size: 30px;
+        width: 100px;
+    }
+
+    .header .text p {
+        position: absolute;
+        top: 185px;
+        left: 0px;
+        font-size: 20px;
+        width: 100px;
+
+    }
+}
+
+.header .text img {
+    position: absolute;
+    top: 320px;
+    right: -150px;
+    font-size: 20px;
+}
+
+@media(min-width:992px) {
+    .header .text img {
+        position: absolute;
+        top: 320px;
+        right: -335px;
+        font-size: 20px;
+    }
+}
+
+/* end header */
+/* start profile */
+.profile-text h2 {
+    font-size: 50px;
+}
+
+.profile-text p {
+    width: 80%;
+}
+
+/* end profile */
+/* start edu */
+.education .text-edu{
+    height: 350px;
+}
+.education .text-edu h2 {
+    font-size: 45px;
+}
+
+.education .text-edu ul li {
+    font-size: 15px;
+    width: 200px;
+}
+.education .text-info p{
+    font-size: 15px;
+}
+.education .text-edu,
+.text-one,
+.text-two,
+.text-three {
+    background-color: var(--two-color) !important;
+}
+
+.education .circle {
+    position: relative;
+}
+
+.education .circle .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,30%);
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.education .circle .text p {
+    font-size: 40px;
+    width: 150px;
+    text-align: center;
+}
+@media(max-width:576px) {
+    .education .circle {
+        position: relative;
+        margin-bottom: 145px;
+    }
+    .education .circle .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% ,-10%);
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-color: var(--main-color);
+    }
+    
+    .education .circle .text p {
+        font-size: 35px;
+        width: 150px;
+        text-align: center;
+    }
+}
+@media(min-width:992px) {
+    .education .text-edu{
+        height: 370px;
+    }
+    .education .text-edu ul li {
+        font-size: 20px;
+        width: 250px;
+    }
+    .education .text-info p{
+        font-size: inherit;
+    }
+    .education .circle .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: var(--main-color);
+    }
+
+    .education .circle .text p {
+        font-size: 50px;
+        width: 150px;
+        text-align: center;
+    }
+}
+
+/* end edu */
+/* start portfilo */
+.portfilo {
+    position: relative;
+}
+
+.portfilo .box {
+    background-color: #042a3d;
+    height: 400px;
+}
+
+.portfilo .box img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -80px;
+}
+
+.portfilo .box .info-box h3 {
+    margin-top: 0px;
+}
+
+.portfilo .box .info-box p {
+    width: 186px;
+}
+
+.portfilo .box img {
+    filter: grayscale(100%);
+}
+
+.portfilo .one img {
+    filter: grayscale(0);
+}
+
+@media(min-width:992px) {
+    .portfilo .box {
+        background-color: #042a3d;
+        height: 400px;
+    }
+
+    .portfilo .box img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        margin-top: 0;
+    }
+}
+
+/* end portfilo */
